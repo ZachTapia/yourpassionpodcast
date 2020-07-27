@@ -16,4 +16,40 @@ $white: #f7f7f7;
   text-align: center;
   max-width: 20%;
   margin: 0 5vw;
+  display: block;
+  text-decoration: none;
+}
+
+.nav-link {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .nav {
+    height: 10vh;
+  }
+
+  .nav-title {
+    font-size: 1.5vw;
+    max-width: 8%;
+    margin: 0 2vw;
+  }
+
+  .nav-link {
+    font-family: Yantramanav;
+    margin: 0 2vw 0 0;
+    display: initial;
+    text-decoration: none;
+    color: $white;
+    font-size: 1.5vw;
+
+    img {
+      margin-top: 6px;
+      width: 30px;
+    }
+  }
+
+  #mission {
+    margin-left: auto;
+  }
 }
