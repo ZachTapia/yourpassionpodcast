@@ -19,3 +19,9 @@ $white: #f7f7f7;
     border-radius: 3px;
   }
 }
+
+@media (min-width: 600px) {
+  .navButton {
+    display: none;
+  }
+}

@@ -13,15 +13,23 @@ const NavDrawer = ({ onClick, drawerOpen }) => {
     <nav className={drawerClasses} onClick={onClick}>
       <Link to="/mission">Mission</Link>
       <Link to="/guests">Guests</Link>
-      <a href="https://anchor.fm/yourpassion" target="_blank">
+      <a
+        href="https://anchor.fm/yourpassion"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Listen
       </a>
       <Link to="/connect">Connect</Link>
       <div className={styles.socials}>
-        <a href="https://instagram.com" target="_blank">
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={Instagram} alt="Instagram Link" />
         </a>
-        <a href="https://youtube.com" target="_blank">
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
           <img src={Youtube} alt="Youtube Link" />
         </a>
       </div>
