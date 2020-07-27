@@ -1,0 +1,42 @@
+$black: #0a100d;
+$white: #f7f7f7;
+
+.nav-drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75vw;
+  height: 100vh;
+  background-color: $black;
+  transform: translateX(100%);
+  transition: all ease-in 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  a {
+    font-family: Yantramanav;
+    font-weight: bold;
+    font-size: 8vw;
+    color: $white;
+    text-decoration: none;
+    margin: 20px;
+  }
+
+  a:first-child {
+    margin-top: 10vh;
+  }
+
+  .socials {
+    margin: auto 0 20vh;
+    img {
+      margin: 0 2vw;
+      width: 30px;
+    }
+  }
+}
+
+.nav-drawer.nav-drawer--open {
+  transform: translateX(0%);
+}

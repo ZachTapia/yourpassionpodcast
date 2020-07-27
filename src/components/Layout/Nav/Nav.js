@@ -1,6 +1,8 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import styles from "./Nav.module.scss"
 import NavButton from "./NavButton/NavButton"
+import NavDrawer from "./NavDrawer/NavDrawer"
 
 const Nav = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -10,10 +12,15 @@ const Nav = () => {
   }
 
   return (
-    <div className={styles.nav}>
-      <div className={styles.navTitle}>YOUR PASSION</div>
-      <NavButton onClick={toggleDrawer} />
-    </div>
+    <>
+      <nav className={styles.nav}>
+        <Link className={styles.navTitle} to="/">
+          YOUR PASSION
+        </Link>
+        <NavButton onClick={toggleDrawer} />
+      </nav>
+      <NavDrawer onClick={toggleDrawer} drawerOpen={drawerOpen} />
+    </>
   )
 }
 
