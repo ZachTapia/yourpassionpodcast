@@ -1,0 +1,28 @@
+/*
+black: #0A100D
+blue: #8FB8DE
+light-blue: #CDF7F6
+yellow: #E8D33F
+green-gray: #627264
+*/
+
+.home-landing {
+  min-height: 75vh;
+
+  .home-landing__title {
+    font-size: 6vw;
+    text-align: center;
+    max-width: 75vw;
+    margin: 5vh auto;
+  }
+}
+
+@media (min-width: 600px) {
+  .home-landing {
+    .home-landing__title {
+      font-size: 2vw;
+      max-width: 55vw;
+      margin: 10vh auto;
+    }
+  }
+}

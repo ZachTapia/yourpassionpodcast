@@ -1,0 +1,17 @@
+$blue: #8fb8de;
+$light-blue: #cdf7f6;
+
+.button {
+  font-size: 5vw;
+  padding: 15px;
+  background-color: $light-blue;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+@media (min-width: 600px) {
+  .button {
+    font-size: 1.5vw;
+  }
+}
