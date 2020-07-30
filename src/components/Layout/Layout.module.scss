@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap&family=Yantramanav:wght@400;700&display=swap&family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap&family=Yantramanav:wght@400;700&display=swap&family=Noto+Sans+JP:wght@400;700&display=swap");
 
 /*
 black: #0A100D
@@ -9,23 +9,26 @@ green-gray: #627264
 */
 
 $black: #0a100d;
+$white: #f7f7f7;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: $black;
-  font-family: Open Sans;
+  font-family: Yantramanav;
 }
 
 .layout-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   min-height: 100vh;
 }
 
 .content {
   flex: 1 0 auto;
+  background-color: $white;
 }
 
 .footer {

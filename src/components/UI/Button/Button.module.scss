@@ -1,17 +1,17 @@
-$blue: #8fb8de;
+$blue: #61a0db;
 $light-blue: #cdf7f6;
+$white: #f7f7f7;
 
 .button {
   font-size: 5vw;
   padding: 15px;
-  background-color: $light-blue;
-  border: none;
-  border-radius: 0;
+  background-color: transparent;
+  border-radius: 10px;
   outline: none;
 }
 
 @media (min-width: 600px) {
   .button {
-    font-size: 1.5vw;
+    font-size: 1.75vw;
   }
 }

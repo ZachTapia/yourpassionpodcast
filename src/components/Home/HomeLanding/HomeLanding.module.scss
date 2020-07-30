@@ -6,23 +6,63 @@ yellow: #E8D33F
 green-gray: #627264
 */
 
-.home-landing {
-  min-height: 75vh;
+$black: #0a100d;
+$white: #f7f7f7;
 
-  .home-landing__title {
-    font-size: 6vw;
+.home-landing {
+  background-color: $white;
+  height: 80vh;
+
+  .home-landing__wrapper {
+    height: 100%;
+    width: 100%;
     text-align: center;
-    max-width: 75vw;
-    margin: 5vh auto;
+    background-color: $black;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+
+    .home-landing__title {
+      font-family: Archivo Black;
+      color: $white;
+      font-size: 10vw;
+      max-width: 75vw;
+      margin: 0 auto 6vh;
+      padding-top: 5vh;
+    }
+
+    .home-landing__text {
+      color: $white;
+      font-size: 6vw;
+      max-width: 85vw;
+      margin: 0 auto;
+    }
+
+    .home-landing__button {
+      margin: 4vh 0;
+    }
   }
 }
 
 @media (min-width: 600px) {
   .home-landing {
-    .home-landing__title {
-      font-size: 2vw;
-      max-width: 55vw;
-      margin: 10vh auto;
+    .home-landing__wrapper {
+      height: 90vh;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 87.5%, 0% 100%);
+
+      .home-landing__title {
+        font-size: 6vw;
+        max-width: 55vw;
+        margin: 0 auto 6vh;
+      }
+
+      .home-landing__text {
+        font-size: 2vw;
+        max-width: 75vw;
+        margin: 0 auto;
+      }
+
+      .home-landing__button {
+        margin: 4vh 0;
+      }
     }
   }
 }

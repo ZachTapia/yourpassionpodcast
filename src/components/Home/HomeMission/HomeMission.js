@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, useStaticQuery, navigate } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./HomeMission.module.scss"
-import Button from "../../UI/Button/Button"
 
 const HomeMission = () => {
   const images = useStaticQuery(graphql`
@@ -32,9 +31,6 @@ const HomeMission = () => {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <div className={styles.homeMission__button}>
-          <Button onClick={() => navigate("/mission")}>LEARN MORE</Button>
-        </div>
       </div>
     </section>
   )

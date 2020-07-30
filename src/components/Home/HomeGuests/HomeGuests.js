@@ -6,8 +6,8 @@ import GuestList from "../../GuestList/GuestList"
 const HomeGuests = () => {
   return (
     <Parallax
-      blur={0}
-      bgImage={require("../../../images/pattern.png")}
+      blur={10}
+      bgImage={require("../../../images/mic.png")}
       bgImageAlt="the cat"
       strength={1200}
     >
