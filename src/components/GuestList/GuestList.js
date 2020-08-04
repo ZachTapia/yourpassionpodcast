@@ -17,7 +17,20 @@ const GuestList = () => {
     }
   `)
 
-  const allGuests = [{ name: "Anthony Villanueva", image: "a_villanueva.png" }]
+  const allGuests = [
+    { name: "Hassan Khaffaf", guestTitle: "Producer", image: "profile.png" },
+    {
+      name: "Anthony Villanueva",
+      guestTitle: "Producer",
+      image: "a_villanueva.png",
+    },
+    { name: "Joe Melendrez", guestTitle: "Producer", image: "profile.png" },
+    {
+      name: "Christina Ballestero",
+      guestTitle: "Producer",
+      image: "profile.png",
+    },
+  ]
 
   const renderGuests = () => {
     return allGuests.map(guest => {
@@ -28,7 +41,14 @@ const GuestList = () => {
         }
       })
 
-      return <GuestCard name={guest.name} image={imageFluid} />
+      return (
+        <GuestCard
+          key={guest.name}
+          name={guest.name}
+          guestTitle={guest.guestTitle}
+          image={imageFluid}
+        />
+      )
     })
   }
 
