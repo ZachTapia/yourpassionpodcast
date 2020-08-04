@@ -9,7 +9,6 @@ green-gray: #627264
 */
 
 $black: #0a100d;
-$white: #f7f7f7;
 
 * {
   box-sizing: border-box;
@@ -22,13 +21,11 @@ $white: #f7f7f7;
 .layout-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   min-height: 100vh;
 }
 
 .content {
   flex: 1 0 auto;
-  background-color: $white;
 }
 
 .footer {

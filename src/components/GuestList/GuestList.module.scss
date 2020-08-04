@@ -2,14 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  .guestCard {
-    margin: 3vh 0;
-    width: 75vw;
-    height: 40vh;
-    background-color: #0a100d;
-    border: 2px solid white;
-  }
 }
 
 @media (min-width: 600px) {

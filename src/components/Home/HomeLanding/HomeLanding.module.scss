@@ -18,7 +18,7 @@ $white: #f7f7f7;
     width: 100%;
     text-align: center;
     background-color: $black;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 0% 100%);
 
     .home-landing__title {
       font-family: Archivo Black;
@@ -45,8 +45,7 @@ $white: #f7f7f7;
 @media (min-width: 600px) {
   .home-landing {
     .home-landing__wrapper {
-      height: 90vh;
-      clip-path: polygon(0% 0%, 100% 0%, 100% 87.5%, 0% 100%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 92.5%, 0% 100%);
 
       .home-landing__title {
         font-size: 6vw;

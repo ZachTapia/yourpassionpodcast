@@ -1,18 +1,15 @@
 import React from "react"
 import styles from "./HomeGuests.module.scss"
-import { Parallax } from "react-parallax"
 import GuestList from "../../GuestList/GuestList"
 
 const HomeGuests = () => {
   return (
-    <Parallax
-      blur={10}
-      bgImage={require("../../../images/mic.png")}
-      bgImageAlt="the cat"
-      strength={1200}
-    >
-      <GuestList />
-    </Parallax>
+    <section className={styles.homeGuests}>
+      <div className={styles.homeGuests__wrapper}>
+        <h1 className={styles.homeGuests__title}>Recent Guests</h1>
+        <GuestList />
+      </div>
+    </section>
   )
 }
 
