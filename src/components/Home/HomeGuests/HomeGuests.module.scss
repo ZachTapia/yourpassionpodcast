@@ -14,14 +14,14 @@ $black: #0a100d;
 
   .home-guests__wrapper {
     background-color: $black;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 0% 100%);
-    padding: 12vh 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 0% 100%);
 
     .home-guests__title {
       font-family: Archivo Black;
       font-size: 9vw;
       text-align: center;
       color: $white;
+      padding-top: 4vh;
     }
   }
 }
