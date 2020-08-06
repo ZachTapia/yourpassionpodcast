@@ -15,7 +15,7 @@ const Footer = () => {
         <div className={styles.footer__socials__icons}>
           <a
             className={styles.footer__socials__icon}
-            href="https://instagram.com"
+            href="https://instagram.com/yourpassionpodcast?igshid=1riy8n281ah1y"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -24,7 +24,7 @@ const Footer = () => {
 
           <a
             className={styles.footer__socials__icon}
-            href="https://youtube.com"
+            href="https://www.youtube.com/channel/UC7tVk5SBAQryKrjL_-fPRSA"
             target="_blank"
             rel="noopener noreferrer"
           >
