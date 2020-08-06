@@ -1,0 +1,123 @@
+$white: #f7f7f7;
+$black: #0a100d;
+$green-gray: #627264;
+
+.guest-card {
+  position: relative;
+  margin: 3vh 0;
+  width: 85vw;
+  height: 40vh;
+
+  .guest-card__button {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 2px $black;
+    background-color: $white;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+
+    span {
+      display: block;
+      width: 12vw;
+      height: 4px;
+      margin-bottom: 7px;
+      border-radius: 3px;
+      background-color: $black;
+      margin: 2px 0;
+    }
+  }
+
+  .guest-card__button--open {
+    transition: all ease-in 0.5s;
+    transform: translateY(-15%) scale(80%);
+  }
+
+  .guest-card__details {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color: $white;
+    transition: all ease-in 0.5s;
+
+    .guest-card__name {
+      padding: 3% 3% 1%;
+      color: $black;
+      font-size: 7vw;
+    }
+
+    .guest-card__title {
+      padding: 0 3%;
+      color: $black;
+      font-size: 6vw;
+    }
+
+    .guest-card__about {
+      background-color: $white;
+      padding: 3% 3% 5%;
+    }
+  }
+
+  .guest-card__details--open {
+    transition: all ease-in 0.5s;
+    transform: translateY(-240%);
+    overflow: visible;
+  }
+
+  .guest-card__image {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 600px) {
+  .guest-card {
+    margin: 3vh;
+    width: 25vw;
+    height: 40vh;
+
+    .guest-card__button {
+      span {
+        width: 3vw;
+      }
+    }
+
+    .guest-card__button--open {
+      transition: all ease-in 0.5s;
+      transform: translateY(-20%) scale(80%);
+    }
+
+    .guest-card__details {
+      .guest-card__name {
+        font-size: 2.25vw;
+        margin: 3.5px 10px;
+        padding: 0;
+      }
+
+      .guest-card__title {
+        font-size: 1.5vw;
+        margin: 0 10px;
+        padding: 0;
+      }
+
+      .guest-card__about {
+        background-color: $white;
+        padding: 10% 5% 5%;
+      }
+    }
+
+    .guest-card__image {
+      width: 100%;
+      height: 70%;
+    }
+  }
+}

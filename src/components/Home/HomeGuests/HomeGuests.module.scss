@@ -5,3 +5,38 @@ light-blue: #CDF7F6
 yellow: #E8D33F
 green-gray: #627264
 */
+
+$white: #f7f7f7;
+$black: #0a100d;
+
+.home-guests {
+  background-color: $white;
+  width: 100vw;
+
+  .home-guests__wrapper {
+    background-color: $black;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 0% 100%);
+
+    .home-guests__title {
+      font-family: Archivo Black;
+      font-size: 9vw;
+      text-align: center;
+      color: $white;
+      padding-top: 4vh;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .home-guests {
+    background-color: $white;
+
+    .home-guests__wrapper {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 92.5%, 0% 100%);
+
+      .home-guests__title {
+        font-size: 3.5vw;
+      }
+    }
+  }
+}
