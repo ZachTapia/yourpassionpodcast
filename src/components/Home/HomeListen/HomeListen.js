@@ -52,6 +52,9 @@ const HomeListen = () => {
               <img className={styles.homeListen__icon} src={Google} />
             </a>
           </div>
+          <p className={styles.homeListen__text}>
+            ...or anywhere else you get your podcasts
+          </p>
         </div>
       </div>
     </section>
