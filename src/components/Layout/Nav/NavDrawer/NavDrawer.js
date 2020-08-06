@@ -23,13 +23,17 @@ const NavDrawer = ({ onClick, drawerOpen }) => {
       <Link to="/connect">Connect</Link>
       <div className={styles.socials}>
         <a
-          href="https://instagram.com"
+          href="https://instagram.com/yourpassionpodcast?igshid=1riy8n281ah1y"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={Instagram} alt="Instagram Link" />
         </a>
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.youtube.com/channel/UC7tVk5SBAQryKrjL_-fPRSA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={Youtube} alt="Youtube Link" />
         </a>
       </div>

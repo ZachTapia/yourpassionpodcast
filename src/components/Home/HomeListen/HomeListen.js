@@ -2,9 +2,9 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./HomeListen.module.scss"
-import Spotify from "../../../images/Spotify.svg"
-import Apple from "../../../images/Apple.svg"
-import Google from "../../../images/Google.svg"
+import Spotify from "../../../images/spotify.svg"
+import Apple from "../../../images/apple.svg"
+import Google from "../../../images/google.svg"
 
 const HomeListen = () => {
   const image = useStaticQuery(graphql`
