@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./Footer.module.scss"
+import Tada from "react-reveal/Tada"
 import Instagram from "../../../images/instagram.svg"
 import Youtube from "../../../images/youtube.svg"
 
@@ -7,10 +8,12 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__socials}>
-        <h1 className={styles.footer__socials__text}>
-          Let's stay connected
-          <br /> Follow us on
-        </h1>
+        <Tada>
+          <h1 className={styles.footer__socials__text}>
+            Let's stay connected
+            <br /> Follow us on
+          </h1>
+        </Tada>
 
         <div className={styles.footer__socials__icons}>
           <a

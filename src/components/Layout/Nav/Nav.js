@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styles from "./Nav.module.scss"
+import Fade from "react-reveal/Fade"
 import NavButton from "./NavButton/NavButton"
 import NavDrawer from "./NavDrawer/NavDrawer"
 import Instagram from "../../../images/instagram.svg"

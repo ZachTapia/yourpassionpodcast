@@ -11,7 +11,7 @@ $white: #f7f7f7;
 
 .home-landing {
   background-color: $white;
-  height: 80vh;
+  height: 87.5vh;
   width: 100vw;
 
   .home-landing__wrapper {
@@ -23,8 +23,9 @@ $white: #f7f7f7;
 
     .home-landing__title {
       font-family: Archivo Black;
+      line-height: 1.5;
       color: $white;
-      font-size: 10vw;
+      font-size: 9.5vw;
       max-width: 75vw;
       margin: 0 auto 6vh;
       padding-top: 5vh;
@@ -35,6 +36,7 @@ $white: #f7f7f7;
       font-size: 6vw;
       max-width: 85vw;
       margin: 0 auto;
+      line-height: 1.5;
     }
 
     .home-landing__button {
