@@ -1,10 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
+import ConnectHeader from "../components/Connect/ConnectHeader/ConnectHeader"
+import ConnectForm from "../components/Connect/ConnectForm/ConnectForm"
 
 const Connect = () => {
   return (
     <Layout>
-      <h1>Connect</h1>
+      <ConnectHeader />
+      <ConnectForm />
     </Layout>
   )
 }
