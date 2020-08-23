@@ -1,0 +1,48 @@
+/*
+black: #0A100D
+blue: #8FB8DE
+light-blue: #CDF7F6
+yellow: #E8D33F
+green-gray: #627264
+*/
+
+$black: #0a100d;
+$white: #f7f7f7;
+
+.connect-header {
+  text-align: center;
+  background-color: $white;
+
+  .connect-header__title {
+    font-family: Archivo Black;
+    line-height: 1.5;
+    color: $black;
+    font-size: 9.5vw;
+    max-width: 75vw;
+    margin: 0 auto 3vh;
+    padding-top: 5vh;
+  }
+
+  .connect-header__text {
+    font-size: 5vw;
+    max-width: 85vw;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 600px) {
+  .connect-header {
+    .connect-header__title {
+      font-size: 6vw;
+      max-width: 55vw;
+      margin: 0 auto 6vh;
+    }
+
+    .connect-header__text {
+      font-size: 2vw;
+      max-width: 55vw;
+      margin: 0 auto;
+    }
+  }
+}

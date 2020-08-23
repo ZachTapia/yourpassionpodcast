@@ -1,7 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
 import Fade from "react-reveal/Fade"
-import Flip from "react-reveal/Flip"
 import styles from "./HomeLanding.module.scss"
 import Button from "../../UI/Button/Button"
 
